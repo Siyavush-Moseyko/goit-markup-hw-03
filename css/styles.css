@@ -246,6 +246,7 @@ img {
 }
 .address-list:nth-child(3) {
   padding-bottom: 60px;
+  margin-bottom: 0px;
 }
 .address-link {
   color: var(--footer-color-link);
