@@ -114,10 +114,10 @@ img {
 }
 .header-contact {
   display: flex;
+  margin-left: auto;
 }
 .header-contact .item:not(:last-child) {
   margin-right: 50px;
-  margin-left: auto;
 }
 .header-link {
   padding-top: 32px;
@@ -190,7 +190,7 @@ img {
   color: var(--title-text-color);
   line-height: 1.14;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 /* ========Work example======== */
 .work {
@@ -222,16 +222,17 @@ img {
 }
 .team-title {
   margin-bottom: 10px;
-  padding-top: 30px;
   font-weight: 500;
   color: var(--title-text-color);
 }
-.team-text {
-  padding-bottom: 30px;
+.team-wrapper {
+  padding: 30px;
 }
 /* ========Footer======== */
 .footer {
   background: var(--section-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   color: var(--primary-color);
@@ -239,14 +240,9 @@ img {
 .logo-link {
   display: flex;
   margin-bottom: 20px;
-  padding-top: 60px;
 }
-.address-list {
+.address-list:not(:last-child) {
   margin-bottom: 10px;
-}
-.address-list:nth-child(3) {
-  padding-bottom: 60px;
-  margin-bottom: 0px;
 }
 .address-link {
   color: var(--footer-color-link);
@@ -259,15 +255,10 @@ img {
   color: var(--accent-color);
 }
 /* ========Portfolio button======== */
-.portfolio {
-  padding-top: 47px;
-  padding-bottom: 47px;
-}
 .portfolio-filter {
   display: flex;
-  padding-top: 47px;
   justify-content: center;
-  margin-bottom: 94px;
+  margin-bottom: 50px;
 }
 .portfolio-button {
   padding: 6px 22px;
@@ -288,13 +279,15 @@ img {
   margin-right: 30px;
 }
 .portfolio-button:hover,
-.portfolio-button:focus {
+.portfolio-button:focus,
+.active-button {
   color: var(--primary-color);
   background-color: var(--accent-color);
 }
-.portfolio-gallery {
+.portfolio-wrapper {
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
-  box-sizing: border-box;
+  border-top: none;
 }
 .portfolio-title {
   color: var(--title-text-color);
@@ -302,13 +295,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 .portfolio-text {
   font-size: 16px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
