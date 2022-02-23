@@ -250,8 +250,11 @@ img {
   background-color: var(--primary-color);
   border-radius: 50%;
 }
+.team-social-icon {
+  fill: #afb1b8;
+}
 .team-social-link:hover .team-social-icon,
-.team-social-link:focus {
+.team-social-link:focus .team-social-icon {
   fill: var(--accent-color);
 }
 /* ========Footer======== */
